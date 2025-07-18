@@ -7,12 +7,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="login-container">
-    <h2>Selamat Datang Di Menu Utama</h2>
-    <button onclick="Logout()">Logout</button>
-  </div>
+  <header class="main-header">
+    <h1>Selamat Datang. Semoga Sehat Selalu!</h1>
+    <button class="logout-button" onclick="Logout()">Logout</button>
+  </header>
 
-  <script>
+  <main class="dashboard">
+    <div class="card">
+      <h3>Total pengunjung</h3>
+      <p id="visitor-count">12</p>
+    </div>
+
+    <div class="card">
+      <h3>Status Sistem</h3>
+      <p class="status">Online</p>
+    </div>
+    
+    <div class="card">
+      <h3>Pesan Baru</h3>
+      <p>pesan belum dibaca</p>
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    &copy; 2025 website Fikri. Uji coba. Semua hak dilindungi undang-undang.
+  </footer>
+
+   <script>
     if (localStorage.getItem("isLoggedIn") !== "true") {
       window.location.href = "login.html";
     }
