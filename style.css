@@ -23,6 +23,8 @@ input{
     background-color: lightgray;
     border: none;
 }
+
+
 input:hover{ background-color: rgb(190, 190, 190);}
 button{
     width: 200px;
@@ -36,4 +38,67 @@ button:hover{ background-color: rgb(72, 164, 72)}
 .error-msg{
     color: red;
     margin-top: 10px;
+}
+
+.main-header{
+    background-color:#3498db;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    font-size: 16px;
+}
+
+.logout-button{
+    cursor: pointer;
+    padding: 8px;
+    right: 10px;
+    top: 20px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 8px;
+    text-align: center;
+    width: 50px;
+}
+
+.logout-button:hover {background-color: rgb(181, 16, 16);}
+
+.dashboard{
+    display: flex;
+    flex:auto;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.card{
+    background-color: rgb(103, 201, 98);
+    padding: 20px;
+    border-radius: 15px;
+    width: 200px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    text-align: center;
+}
+
+.card:hover {
+    transform:translate(5px);
+    background-color:rgb(72, 164, 72) ;
+}
+.status{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.main-footer{
+    text-align: center;
+    font-size: 10px;
+    padding: 8px;
+    width: 100%;
+    background-color: whitesmoke;
+    box-sizing: border-box;
 }
